@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interval</title>
+    </head>
+
+    <body>
+        <h1>What time is it?</h1>  
+        <p id="time"></p>
+    </body>
+
+    <script>
+        let timeElement = document.querySelector('#time')
+
+        setInterval( () =>  {   //shows an alert box at timeout value
+            let date = Date()
+            timeElement.innerHTML = date 
+        }, 1000)  //3000 milliseconds
+    </script>
+    </body>
+</html>
